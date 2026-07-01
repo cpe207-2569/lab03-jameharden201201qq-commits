@@ -12,28 +12,42 @@
 
     <style>
       .profile-img {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         border-radius: 50%;
+      }
+      .custom-card-img {
+        height: 220px;
+        object-fit: cover;
+        border-top-left-radius: 1rem !important;
+        border-top-right-radius: 1rem !important;
       }
     </style>
   </head>
   <body>
     <div
-      class="row w-100 p-3 mb-2 bg-dark text-white text-center m-0 justify-content-around"
+      class="row w-100 py-3 bg-dark text-white text-center m-0 justify-content-around align-items-center shadow-sm"
     >
       <div class="col">
-        <button type="button" class="btn btn-dark w-100">Home</button>
+        <button type="button" class="btn btn-dark w-100 fs-4 fw-medium py-2">
+          Home
+        </button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-dark w-100">Favorite</button>
+        <button type="button" class="btn btn-dark w-100 fs-4 fw-medium py-2">
+          Favorite
+        </button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-dark w-100">Gallery</button>
+        <button type="button" class="btn btn-dark w-100 fs-4 fw-medium py-2">
+          Gallery
+        </button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-dark w-100">Contact</button>
+        <button type="button" class="btn btn-dark w-100 fs-4 fw-medium py-2">
+          Contact
+        </button>
       </div>
     </div>
 
@@ -44,14 +58,12 @@
         <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
           <img
             src="/workLab3/images/profile.jpg"
-            class="profile-img shadow-sm"
+            class="profile-img shadow"
             alt="My picture"
           />
         </div>
         <div class="col-12 col-md-8 text-center text-md-start px-4">
-          <h1 class="display-5 fw-normal mb-2 text-secondary-dark">
-            Natthanan Sueaman
-          </h1>
+          <h1 class="display-5 fw-normal mb-2">Natthanan Sueaman</h1>
           <p class="fs-5 text-muted leading-relaxed">
             Hi, my name is Poom. I am studying at Chiang Mai University,
             majoring in Computer Engineering (CPE). I love playing basketball,
@@ -61,51 +73,72 @@
       </div>
     </div>
 
-    <div class="text-center"><h3>Skills</h3></div>
-    <br />
-    <div class="d-flex">
-      <div class="card" style="width: 18rem">
-        <img
-          src="/workLab3/images/istockphoto-871030872-612x612.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Programming</h5>
-          <p class="card-text">
-            I have learned the basics of C++ and am currently starting to study
-            web development.
-          </p>
+    <div class="container my-5">
+      <h2 class="text-center mb-5 fw-normal fs-1">Skills</h2>
+
+      <div class="row g-5 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div
+            class="card rounded-4 border-0 shadow w-100"
+            style="max-width: 26rem"
+          >
+            <img
+              src="/workLab3/images/istockphoto-871030872-612x612.jpg"
+              class="card-img-top custom-card-img"
+              alt="Programming"
+            />
+            <div class="card-body p-4 fs-5">
+              <h4 class="card-title fw-semibold mb-3">Programming</h4>
+              <p class="card-text text-muted">
+                I have learned the basics of C++ and am currently starting to
+                study web development.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="/workLab3/images/pngtree-blue-circuit-board-contemporary-technology-image_15957904.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Nanoteachnology Research</h5>
-          <p class="card-text">
-            I completed a training session on electrical circuit assembly at the
-            Physics Olympiad camp, gaining hands-on experience in building
-            simple circuits on a breadboard.
-          </p>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div
+            class="card rounded-4 border-0 shadow w-100"
+            style="max-width: 26rem"
+          >
+            <img
+              src="/workLab3/images/pngtree-blue-circuit-board-contemporary-technology-image_15957904.jpg"
+              class="card-img-top custom-card-img"
+              alt="Circuit"
+            />
+            <div class="card-body p-4 fs-5">
+              <h4 class="card-title fw-semibold mb-3">Circuit</h4>
+              <p class="card-text text-muted">
+                I completed a training session on electrical circuit assembly at
+                the Physics Olympiad camp, gaining hands-on experience in
+                building simple circuits on a breadboard.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="/workLab3/images/pngtree-blue-circuit-board-contemporary-technology-image_15957904.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Nanoteachnology Research</h5>
-          <p class="card-text">
-            I completed a training session on electrical circuit assembly at the
-            Physics Olympiad camp, gaining hands-on experience in building
-            simple circuits on a breadboard.
-          </p>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div
+            class="card rounded-4 border-0 shadow w-100"
+            style="max-width: 26rem"
+          >
+            <img
+              src="/workLab3/images/Nanotechnology-cancer.jpg"
+              class="card-img-top custom-card-img"
+              alt="Nanotechnology Research"
+            />
+            <div class="card-body p-4 fs-5">
+              <h4 class="card-title fw-semibold mb-3">
+                Nanotechnology Research
+              </h4>
+              <p class="card-text text-muted">
+                I conducted research on utilizing triangular silver
+                nanoparticles and spherical gold nanoparticles for glucose
+                detection to screen for diabetes.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
